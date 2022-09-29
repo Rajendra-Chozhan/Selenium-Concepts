@@ -34,7 +34,10 @@ public class FileUploadbyRobotClass {
 		     driver.findElement(By.xpath("//span[contains(text(),'Choose CV')]")).click();
 		     
 		     StringSelection ss = new StringSelection("C:\\Users\\msi\\Desktop\\Sample.txt");
+		     
 		     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+		     
+		     
 		      // Robot object creation
 		      Robot r = new Robot();
 		      //pressing enter
@@ -51,5 +54,6 @@ public class FileUploadbyRobotClass {
 		      r.keyPress(KeyEvent.VK_ENTER);
 		      //releasing enter
 		      r.keyRelease(KeyEvent.VK_ENTER);
+		      
 		   }
 }

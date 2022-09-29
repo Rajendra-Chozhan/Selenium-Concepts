@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Mouseover_Action {
+public class Action_MouseOver {
 
 	
 	@Test

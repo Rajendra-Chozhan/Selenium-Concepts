@@ -20,7 +20,10 @@ public class RobotClass {
 		 driver.get("http://www.edureka.co");
 		 driver.manage().window().maximize();
 		 driver.findElement(By.linkText("Courses")).click();
+		 
+		 
 		 Robot robot = new Robot();
+		 
 		 Thread.sleep(4000);
 		 robot.keyPress(KeyEvent.VK_DOWN);
 		 Thread.sleep(4000);

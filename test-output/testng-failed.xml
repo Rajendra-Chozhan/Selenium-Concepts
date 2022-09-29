@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_concepts.FileUploadbyRobotClass">
+      <class name="selenium_concepts.GetText_and_GetAttribute">
         <methods>
-          <include name="fileupload"/>
+          <include name="methodone"/>
         </methods>
-      </class> <!-- selenium_concepts.FileUploadbyRobotClass -->
+      </class> <!-- selenium_concepts.GetText_and_GetAttribute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
