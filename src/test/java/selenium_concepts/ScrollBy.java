@@ -22,11 +22,9 @@ public class ScrollBy {
 		//to perform Scroll on application using Selenium
 		
 		
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         
    WebElement inter = driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[5]/span[1]/div[1]/div[1]"));
-        
-        
+         
         
    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", inter);
         
