@@ -21,6 +21,8 @@ public class Ismethods {
 	
 		driver.get("http://www.gmail.com");
 		driver.manage().window().maximize();
+		
+		
 		//isDisplayed() method returns boolean value either True or False
 		Boolean Display = driver.findElement(By.xpath("//*[contains(text(),'Next')]")).isDisplayed();
 		

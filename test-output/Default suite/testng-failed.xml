@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_concepts.WindowHandling">
+      <class name="selenium_concepts.HDFC">
         <methods>
           <include name="methodone"/>
         </methods>
-      </class> <!-- selenium_concepts.WindowHandling -->
+      </class> <!-- selenium_concepts.HDFC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

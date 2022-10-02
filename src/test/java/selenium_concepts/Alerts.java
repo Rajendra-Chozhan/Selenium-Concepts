@@ -26,6 +26,8 @@ public void methodone() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\msi\\Desktop\\Selenium\\Chrome Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://the-internet.herokuapp.com/");
+		
+		
 		driver.findElement(By.xpath("//a[contains(text(),'JavaScript Alerts')]")).click();
 		//JS Alert
 		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Alert')]")).click();
