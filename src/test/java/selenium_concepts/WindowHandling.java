@@ -39,6 +39,8 @@ public class WindowHandling {
                 System.out.println("Heading of child window is " + text.getText());
      
             }
+                else
+                driver.switchTo().defaultContent();
         }
         
         driver.quit();
