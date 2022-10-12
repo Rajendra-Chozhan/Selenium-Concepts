@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_concepts.Handle_Calendar">
+      <class name="selenium_concepts.LinkText_and_PartialLinkText">
         <methods>
-          <include name="calendar"/>
+          <include name="methodone"/>
         </methods>
-      </class> <!-- selenium_concepts.Handle_Calendar -->
+      </class> <!-- selenium_concepts.LinkText_and_PartialLinkText -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
