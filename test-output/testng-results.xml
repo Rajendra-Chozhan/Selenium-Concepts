@@ -1,17 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-12T22:29:37 IST" name="Default suite" finished-at="2022-10-12T22:29:42 IST" duration-ms="4974">
+  <suite started-at="2022-10-15T23:46:38 IST" name="Default suite" finished-at="2022-10-15T23:46:53 IST" duration-ms="15667">
     <groups>
     </groups>
-    <test started-at="2022-10-12T22:29:37 IST" name="Default test" finished-at="2022-10-12T22:29:42 IST" duration-ms="4974">
-      <class name="selenium_concepts.Following_Siblings">
-        <test-method signature="methodone()[pri:0, instance:selenium_concepts.Following_Siblings@169e6180]" started-at="2022-10-12T22:29:37 IST" name="methodone" finished-at="2022-10-12T22:29:42 IST" duration-ms="4934" status="PASS">
+    <test started-at="2022-10-15T23:46:38 IST" name="Default test" finished-at="2022-10-15T23:46:53 IST" duration-ms="15667">
+      <class name="selenium_concepts.Parallel_Browser_Testing">
+        <test-method signature="testOnChromeWithBrowserStackUrl()[pri:0, instance:selenium_concepts.Parallel_Browser_Testing@6cd28fa7]" started-at="2022-10-15T23:46:38 IST" name="testOnChromeWithBrowserStackUrl" finished-at="2022-10-15T23:46:46 IST" duration-ms="7898" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methodone -->
-      </class> <!-- selenium_concepts.Following_Siblings -->
+        </test-method> <!-- testOnChromeWithBrowserStackUrl -->
+        <test-method signature="testOnEdge()[pri:0, instance:selenium_concepts.Parallel_Browser_Testing@6cd28fa7]" started-at="2022-10-15T23:46:46 IST" name="testOnEdge" finished-at="2022-10-15T23:46:53 IST" duration-ms="7421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnEdge -->
+        <test-method signature="testOnFirefox()[pri:0, instance:selenium_concepts.Parallel_Browser_Testing@6cd28fa7]" started-at="2022-10-15T23:46:53 IST" name="testOnFirefox" finished-at="2022-10-15T23:46:53 IST" duration-ms="248" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-8BLJPQ9', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-8BLJPQ9', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
+at selenium_concepts.Parallel_Browser_Testing.testOnFirefox(Parallel_Browser_Testing.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnFirefox -->
+      </class> <!-- selenium_concepts.Parallel_Browser_Testing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
