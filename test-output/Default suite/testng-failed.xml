@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_concepts.Parallel_Browser_Testing">
+      <class name="annotations.SampleTest">
         <methods>
-          <include name="testOnFirefox"/>
+          <include name="testCurrentUrl"/>
+          <include name="reportReady"/>
+          <include name="screenShot"/>
+          <include name="cleanUp"/>
+          <include name="profileSetup"/>
+          <include name="appSetup"/>
+          <include name="closeUp"/>
+          <include name="setUp"/>
+          <include name="checkLogin"/>
         </methods>
-      </class> <!-- selenium_concepts.Parallel_Browser_Testing -->
+      </class> <!-- annotations.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

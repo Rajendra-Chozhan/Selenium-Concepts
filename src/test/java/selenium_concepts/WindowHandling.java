@@ -1,25 +1,32 @@
 package selenium_concepts;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class WindowHandling {
-
-	@Test
-	public void methodone()  {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\msi\\Desktop\\Selenium\\Chrome Driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+public class WindowHandling extends BaseClass {
 
 	
+	
+	@Test
+	public void methodone() throws IOException  {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\msi\\Desktop\\Selenium\\Chrome Driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+	
+
         driver.manage().window().maximize();
         driver.get("https://demoqa.com/browser-windows");
-
+        driver.manage().window().maximize();
+        captureScreen(driver);
         // Open new child window within the main window
         driver.findElement(By.id("windowButton")).click();
 
@@ -29,6 +36,8 @@ public class WindowHandling {
         Set<String> allWindowHandles = driver.getWindowHandles();
         Iterator<String> iterator = allWindowHandles.iterator();
 
+        
+        captureScreen(driver);
         // Here we will check if child window has other child windows and will fetch the heading of the child window
         while (iterator.hasNext()) {
             String ChildWindow = iterator.next();
@@ -37,12 +46,13 @@ public class WindowHandling {
 
                 WebElement text = driver.findElement(By.id("sampleHeading"));
                 System.out.println("Heading of child window is " + text.getText());
+                captureScreen(driver);
      
             }
                 else
                 driver.switchTo().defaultContent();
         }
-        
+        captureScreen(driver);
         driver.quit();
         
 
