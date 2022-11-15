@@ -5,15 +5,15 @@
 
 
 <classes>
-<!-- <class name = "selenium_concepts.Assert_Equals"/>--> 
-<!--  <class name = "selenium_concepts.Find_Element"/> --> 
-<!--  <class name = "selenium_concepts.Highlight_Element"/> --> 
-<!--   <class name = "selenium_concepts.Alerts"/> -->
-<!--  <class name = "selenium_concepts.Mouseover_Action"/> -->
-
-<!--  <class name = "selenium_concepts.BrokenImages"/> -->
-
+    
+<class name = "selenium_concepts.Assert_Equals"/>
+  <class name = "selenium_concepts.Find_Element"/> 
+  <class name = "selenium_concepts.Highlight_Element"/> 
+  <class name = "selenium_concepts.Alerts"/> 
+  <class name = "selenium_concepts.Mouseover_Action"/> 
+  <class name = "selenium_concepts.BrokenImages"/> 
 <class name = "selenium_concepts.Frames"/>
+
 </classes>
 
   </test> <!-- Test -->

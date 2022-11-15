@@ -3,19 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="annotations.SampleTest">
+      <class name="selenium_concepts.PDF_Reader">
         <methods>
-          <include name="testCurrentUrl"/>
-          <include name="reportReady"/>
-          <include name="screenShot"/>
-          <include name="cleanUp"/>
-          <include name="profileSetup"/>
-          <include name="appSetup"/>
-          <include name="closeUp"/>
-          <include name="setUp"/>
-          <include name="checkLogin"/>
+          <include name="methodone"/>
         </methods>
-      </class> <!-- annotations.SampleTest -->
+      </class> <!-- selenium_concepts.PDF_Reader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
