@@ -13,12 +13,8 @@ import org.testng.annotations.Test;
 
 public class ParameterDataproviderWithClassLevel {
 
-	
-	
 
-	    
-	    
-
+// we need to check whether this method can be simplified
 	   
     @Test(dataProvider="SearchProvider",dataProviderClass=DataproviderClass.class)
     public void testMethod(String author,String searchKey) throws InterruptedException{
@@ -43,5 +39,8 @@ public class ParameterDataproviderWithClassLevel {
 	        //verify if search box has correct value
 	        Assert.assertTrue(testValue.equalsIgnoreCase(searchKey));
 	        driver.quit();
+
+			// same scenario should be executed for different users
+
 	   }
 }

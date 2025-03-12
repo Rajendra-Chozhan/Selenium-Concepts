@@ -28,7 +28,8 @@ public class Frames {
 			//	driver.switchTo().frame("__tcfapiLocator");
 				
 				driver.switchTo().defaultContent();
-				//
+				//driver.switchTo().parentFrame();
+				// switch to parent frame
 	
 	
 	    driver.quit();

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class Assert_Equals {
 
@@ -19,7 +20,12 @@ public class Assert_Equals {
 		driver.manage().window().maximize();
 		System.out.println(ActualTitle);
 		String ExpectedTitle = "Most Reliable App & Cross Browser Testing Platform | BrowserStack";
-			
+
+		SoftAssert s = new SoftAssert();
+		s.assertEquals(ExpectedTitle,ActualTitle);
+		s.assertAll();
+
+		//assertAll will print the assert errors while executing
 			
 			
 			try {

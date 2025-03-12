@@ -21,7 +21,7 @@ public class BaseClass {
 		 {
 			 
 		        Date d = new Date();
-		        System.out.println(d.toString());
+		        System.out.println(d);
 
 		        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");         // Your each screenshot will be taken as this format "Year-Month-Date-Hours-Minutes-Seconds"
 		    	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

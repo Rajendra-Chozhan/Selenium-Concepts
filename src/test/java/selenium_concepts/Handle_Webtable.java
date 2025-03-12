@@ -66,9 +66,8 @@ List<WebElement> allrows = driver.findElements(By.xpath("//table[@id='customers'
 					System.out.println(value);
 				
 			}
-			
-			
-			
+
+
 			List<WebElement> alldata = driver.findElements(By.xpath("//table[@id='customers']//td"));
 			
 			boolean datastatus = false;

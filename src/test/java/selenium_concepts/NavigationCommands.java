@@ -13,7 +13,7 @@ public class NavigationCommands {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\msi\\Desktop\\Selenium\\Chrome Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
+
 		
 		
 		 // Using navigate to command navigate to another url

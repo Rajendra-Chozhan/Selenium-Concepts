@@ -30,11 +30,11 @@ public class DragandDrop {
          WebElement To=driver.findElement(By.xpath("//*[@id='bank']/li"));					
          		
          //Using Action class for drag and drop.		
-         Actions act=new Actions(driver);					
-
+         Actions act=new Actions(driver);
+		 act.moveToElement(From);
 	//Dragged and dropped.		
          act.dragAndDrop(From, To).build().perform();	
-         
+
          driver.quit();
 	}		
 }

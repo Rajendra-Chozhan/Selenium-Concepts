@@ -21,9 +21,7 @@ public class PDF_Reader {
 	
 	
 	
-	File file = new File("C:/Users/msi/Desktop/Resume/RajendraChozhanResume.pdf");
-	
-	
+	File file = new File("C:\\Users\\rgovindraj\\OneDrive - Deloitte (O365D)\\Desktop\\Rajendra Chozhan Resume.pdf");
 	
 	FileInputStream fis = new FileInputStream(file);
 	
@@ -38,10 +36,10 @@ public class PDF_Reader {
 	PDFTextStripper strip = new PDFTextStripper();
 	
 	String data = strip.getText(pddoc);
-	
+	String a = strip.getPageStart();
 	System.out.println(data);
-	
-	
+
+
 	}
 	
 	

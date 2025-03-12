@@ -25,13 +25,11 @@ public class GetText_and_GetAttribute {
     	//Storing the text of the heading in a string
     	
     	WebElement heading = driver.findElement(By.xpath("//*[@class='cls-1']"));
-    	
  
     	
     	String gettext = driver.findElement(By.xpath("//*[@class='cls-1']")).getText();
     	
     	System.out.println(gettext);
-    	
     	
     	String attribute = heading.getAttribute("x");
     	

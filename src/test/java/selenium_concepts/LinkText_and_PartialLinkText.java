@@ -17,8 +17,7 @@ public class LinkText_and_PartialLinkText {
 		
 		 String baseUrl = "http://demo.guru99.com/test/link.html";					
 	       					
-	     			
-	        		
+
 	        driver.get(baseUrl);					
 	        driver.findElement(By.linkText("click here")).click();					
 	        System.out.println("title of page is: " + driver.getTitle());							

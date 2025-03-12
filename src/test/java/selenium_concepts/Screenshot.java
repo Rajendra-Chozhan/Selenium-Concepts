@@ -36,17 +36,14 @@ public class Screenshot {
 	driver.manage().window().maximize();
 	
 
-	
 	 WebElement element = driver.findElement(By.xpath("//h2[contains(text(),'Core Java Test papers')]"));
-     
-     
+
 	   ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	        
-		
-    
+
    //Take the screenshot
     File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-    
+
     //Copy the file to a location and use try catch block to handle exception
     try {
         FileUtils.copyFile(screenshot, new File("C:\\Users\\msi\\Desktop\\homePageScreenshot.png"));
